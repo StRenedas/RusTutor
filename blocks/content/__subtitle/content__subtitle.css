@@ -1,0 +1,31 @@
+.content__subtitle {
+    margin: 48px auto 0;
+    max-width: 900px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    text-align: center;
+    color:white;
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .content__subtitle {
+        margin: 28px auto 0;
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .content__subtitle {
+        margin: 36px auto 0;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .content__subtitle {
+        max-width: 700px;
+        font-size: 17px;
+    }
+}

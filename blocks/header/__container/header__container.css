@@ -1,0 +1,5 @@
+.header__container {
+    margin-left: 15px;
+    max-width: 230px;
+    display: flex;
+}

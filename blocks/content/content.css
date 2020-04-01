@@ -1,0 +1,7 @@
+@import url(__title/content__title.css);
+@import url(__subtitle/content__subtitle.css);
+
+.content {
+    max-width: 1184px;
+    margin: 0 auto 0;
+}

@@ -1,0 +1,13 @@
+.footer__container {
+    margin-left: 15px;
+    max-width: 406px;
+    display: flex;
+    align-items: center;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer__container {
+        margin: 0;
+    }
+}

@@ -1,0 +1,20 @@
+.header__auth {
+    margin-right: 15px;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgb(200, 234, 252);
+    transition: 0.3s linear;
+}
+
+.header__auth:hover {
+    opacity: 0.5;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .header__auth {
+        font-size: 28px;
+    }
+}

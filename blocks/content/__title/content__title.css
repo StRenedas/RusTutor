@@ -1,0 +1,32 @@
+.content__title {
+    margin: 0 auto 0;
+    max-width: 900px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+    .content__title {
+        max-width: 300px;
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .content__title {
+        max-width: 400px;
+        font-size: 58px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .content__title {
+        margin: 48px auto 0;
+        max-width: 700px;
+        font-size: 64px;
+    }
+}

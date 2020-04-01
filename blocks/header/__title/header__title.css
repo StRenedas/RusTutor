@@ -1,0 +1,15 @@
+.header__title {
+    margin-left: 15px;
+    justify-self: flex-start;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    color: rgb(200, 234, 252);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .header__title {
+        font-size: 1px;
+        display: none;
+    }
+}

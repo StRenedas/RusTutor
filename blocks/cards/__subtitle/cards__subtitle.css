@@ -1,0 +1,13 @@
+.cards__subtitle {
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cards__subtitle {
+        font-size: 14px;
+    }
+}

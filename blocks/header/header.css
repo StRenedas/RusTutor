@@ -1,0 +1,18 @@
+@import url(__logo/header__logo.css);
+@import url(__content/header__content.css);
+@import url(__container/header__container.css);
+@import url(__title/header__title.css);
+@import url(__auth/header__auth.css);
+
+.header {
+    margin-bottom: 40px;
+    padding: 0;
+    /*background-color: #2e2f36;*/
+    background-color: #111111;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .header {
+        margin-bottom: 80px;
+    }
+}
