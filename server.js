@@ -1,2 +1,4 @@
 const http = require('http');
-console.log('Hello');
+http.createServer(function(req,res){
+    res.end("Server has sent a response: AAAA");
+}).listen(5500);
