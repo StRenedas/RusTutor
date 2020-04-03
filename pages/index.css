@@ -16,7 +16,5 @@
     -moz-text-size-adjust: 100%; 
     /* Рендеринг */
     text-rendering: optimizeLegibility; 
-    background-image: url("/images/content/edit1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: rgb(236,239,246);
 }

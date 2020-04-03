@@ -1,0 +1,9 @@
+@import url(./__container/infoblock___container.css);
+@import url(./__howto/infoblock__howto.css);
+@import url(./__instructions/infoblock__instructions.css);
+@import url(./__subtitle/infoblock__subtitle.css);
+@import url(./__title/infoblock__title.css);
+
+.infoblock {
+    width: 50%;
+}

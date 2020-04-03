@@ -7,7 +7,7 @@
     <title>HowToRus</title>
     <link rel="shortcut icon" href="images/browser-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="pages/homePage.css">
 </head>
 
 <body class="page">
@@ -17,37 +17,28 @@
                 <img src="images/header/book-logo.png" alt="logo" class="header__logo">
                 <p class="header__title">HowToRus</p>
             </div>
-            <button class="header__auth">Sign in</button>
         </div>
     </header>
 
 
 
     <main class="content">
-        <section class="intro">
-            <h1 class="content__title">Challenge your russian here!</h1>
-            <p class="content__subtitle">That's a service to practice your skills at russian language and get some good
-                grades at SUSU.</p>
-        </section>
-        <div class="signup">
-            <form class = "signup__form" name = "signup"> 
-                <input type="text" class = "signup__input" name = "username" id = "username" placeholder = "Enter name:">
-                <span class = "error" id = "error-username"></span>
-
-                <input type="password" class = "signup__input" name = "password" id = "password" placeholder = "Password">
-                <span class = "error" id = "error-password"></span>
-
-                <input type="password" class = "signup__input" name = "password-repeat" id = "password-repeat" placeholder = "Repeat password">
-                <span class = "error" id = "error-password-repeat"></span>
-
-                <button class = "signup__submit" type="submit" id = "submit">OK</button>
-            </form>
-        </div>
-
-
-<!--    <div class="signup">
-            <div class="container">
-                <img src="" alt="">
+        <section class="guest-info">
+            <div class="infoblock">
+                <h1 class = "infoblock__title">Challenge your russian here!</h1>
+                <p class="infoblock__subtitle">That's a service to practice your skills at russian language and get some good grades at SUSU.</p>
+                <div class="infoblock__container">
+                    <h2 class="infoblock__howto">How to use?</h2>
+                    <ul class="infoblock__instructions">
+                        <li>Sign up using a form at the right side</li>
+                        <li>You start at a 'Begginer' level</li>
+                        <li>Then choose an exercise from 4 different ones</li>
+                        <li>Complete the test cases</li>
+                        <li>Your progress is saved at the profile section</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="signup">
                 <form class="signup__form" name="signup">
                     <input type="text" class="signup__input" name="username" id="username" placeholder="Enter name:">
                     <span class="error" id="error-username"></span>
@@ -55,10 +46,14 @@
                     <input type="password" class="signup__input" name="password" id="password" placeholder="Password">
                     <span class="error" id="error-password"></span>
 
+                    <input type="password" class="signup__input" name="password-repeat" id="password-repeat"
+                        placeholder="Repeat password">
+                    <span class="error" id="error-password-repeat"></span>
+
                     <button class="signup__submit" type="submit" id="submit">OK</button>
                 </form>
             </div>
-        </div>-->
+        </section>
     </main>
 
 
@@ -83,3 +78,20 @@
 </body>
 
 </html>
+
+
+
+<!--    <div class="signup">
+            <div class="container">
+                <img src="" alt="">
+                <form class="signup__form" name="signup">
+                    <input type="text" class="signup__input" name="username" id="username" placeholder="Enter name:">
+                    <span class="error" id="error-username"></span>
+
+                    <input type="password" class="signup__input" name="password" id="password" placeholder="Password">
+                    <span class="error" id="error-password"></span>
+
+                    <button class="signup__submit" type="submit" id="submit">OK</button>
+                </form>
+            </div>
+        </div>-->
