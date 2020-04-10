@@ -1,3 +1,31 @@
+@import url(../signup/__form/signup__form.css);
+@import url(../signup/__input/signup__input.css);
+@import url(../signup/__submit/signup__submit.css);
+@import url(../signup/__title/signup__title.css);
+
 .signup {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #264796;
 }
+ /*   width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+   
+        text-align: center;
+    width: 80%;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    font-weight: 300;
+    
+    
+    
+    
+    
+    */

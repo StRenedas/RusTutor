@@ -1,9 +1,17 @@
 @import url(./__container/infoblock___container.css);
-@import url(./__howto/infoblock__howto.css);
 @import url(./__instructions/infoblock__instructions.css);
 @import url(./__subtitle/infoblock__subtitle.css);
 @import url(./__title/infoblock__title.css);
 
 .infoblock {
+    padding: 125px 0 128px;
+    background-color: #ECEFF6;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #25618C;
 }
+

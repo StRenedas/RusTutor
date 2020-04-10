@@ -1,5 +1,6 @@
 .guest-info {
-    width: 100vw;
+    margin: 0 auto;
+    max-width: 1184px;
     display: flex;
     justify-content: space-between;
 }

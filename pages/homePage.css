@@ -8,7 +8,9 @@
 }
 .page {
     margin: 0 auto;
-    font-family: 'Open Sans', Arial, sans-serif;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     /* Сглаживание для браузеров */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -18,4 +20,5 @@
     -moz-text-size-adjust: 100%; 
     /* Рендеринг */
     text-rendering: optimizeLegibility;
+    background-color: #0A132D;
 }
