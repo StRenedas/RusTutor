@@ -1,9 +1,10 @@
 @import url(__logo/header__logo.css);
 @import url(__content/header__content.css);
 @import url(__container/header__container.css);
-@import url(__links/header.links.css);
+@import url(__links/header__links.css);
 
 .header {
+    color: white;
     padding: 0;
     /*background-color: #2e2f36;*/
     background-color: #111111;

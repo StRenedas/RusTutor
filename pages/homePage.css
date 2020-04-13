@@ -3,9 +3,9 @@
 @import url(../blocks/infoblock/infoblock.css);
 @import url(../blocks/guest-info/guest-info.css);
 @import url(../blocks/signup/signup.css);
-* {
+/** {
     border: 1px solid red;
-}
+}*/
 .page {
     margin: 0 auto;
     color: #ffffff;

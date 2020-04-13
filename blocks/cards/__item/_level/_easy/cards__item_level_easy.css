@@ -1,3 +1,12 @@
 .cards__item_level_easy {
+    /*background-image: linear-gradient(rgb(170, 255, 170), white);*/
+    background-color: #0A132D;
+    color: inherit;
+    border: 2px solid rgb(170, 255, 170);
+}
+
+.cards__item_level_easy:hover {
     background-image: linear-gradient(rgb(170, 255, 170), white);
+    transition: transform 0.4s ease-out;
+    color: black;
 }

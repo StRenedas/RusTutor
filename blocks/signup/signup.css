@@ -10,22 +10,8 @@
     justify-content: center;
     background-color: #264796;
 }
- /*   width: 70%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-   
-        text-align: center;
-    width: 80%;
-    margin-bottom: 5%;
-    border-radius: 40px;
-    font-weight: 300;
-    
-    
-    
-    
-    
-    */
+.error {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 14px;
+}

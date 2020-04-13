@@ -10,21 +10,17 @@
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="pages/homePage.css">
 </head>
-
 <body class="page">
     <header class="header">
         <div class="header__content">
             <img src="images/footer/logo_44.png" alt="logo" class="header__logo">
             <div class="header__links">
-                <p class="header__link">FAQ</p>
-                <p class="header__link">E-SUSU</p>
-                <p class="header__link">You're not logged in</p>
+                <a class="header__link">FAQ</a>
+                <a class="header__link">E-SUSU</a>
+                <a class="header__link">You're not logged in</a>
             </div>
         </div>
     </header>
-
-
-
     <main class="content">
         <section class="guest-info">
             <div class="infoblock">
@@ -41,7 +37,7 @@
                 </div>
             </div>
             <div class="signup">
-                <form class="signup__form" name="signup">
+                <form class="signup__form" name="signup" action="userValidation.php" method="POST">
                     <div class="signup__title">Sign In</div>
 
                     <input type="text" class="signup__input" name="username" id="username" placeholder="Login:">
@@ -55,12 +51,20 @@
             </div>
         </section>
     </main>
-        <footer class="footer">
-            <p class="footer__copyright">&copy Stanislav Sosedov</p>
-        </footer>
+    <footer class="footer">
+        <p class="footer__copyright">&copy Stanislav Sosedov</p>
+    </footer>
 </body>
-
+<script defer src="/homePageScript.js"></script>
 </html>
+
+
+
+
+
+
+
+
 
 
 
@@ -77,11 +81,6 @@
                     <button class="signup__submit" type="submit" id="submit">OK</button>
                 </form>
             </div>
-
-
-
-
-
 
         <footer class="footer">
             <div class="footer__content">

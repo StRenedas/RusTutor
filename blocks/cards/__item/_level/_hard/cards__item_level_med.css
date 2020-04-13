@@ -1,3 +1,10 @@
 .cards__item_level_med {
+    background-color: #0A132D;
+    color: inherit;
+    border: 2px solid rgb(255, 255, 170);
+}
+.cards__item_level_med:hover {
     background-image: linear-gradient(rgb(255, 255, 170), white);
+    transition: transform 0.4s ease-out;
+    color: black;
 }
