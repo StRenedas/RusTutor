@@ -42,13 +42,13 @@
                 <form class="signup__form" name="signup" action="login.php" method="POST">
                     <div class="signup__title">Sign In</div>
 
-                    <input type="text" class="signup__input" name="username" id="username" placeholder="Login:">
+                    <input type="text" class="signup__input" name="username" id="username" placeholder="Login:" minlength = "6" maxlength = "25">
                     <span class="error" id="error-username"></span>
 
-                    <input type="password" class="signup__input" name="password" id="password" placeholder="Password:">
+                    <input type="password" class="signup__input" name="password" id="password" placeholder="Password:" minlength = "6" maxlength = "25">
                     <span class="error" id="error-password"></span>
 
-                    <button class="signup__submit" name = 'login-submit' type="submit" id="submit">SUBMIT</button>
+                    <button class="signup__submit" name = 'login-submit' type="submit" id="submit" disabled = "disabled" >SUBMIT</button>
                 </form>
             </div>
         </section>

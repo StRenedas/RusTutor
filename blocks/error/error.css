@@ -1,0 +1,4 @@
+@import url(../error/_is-active/error_is-active.css);
+.error {
+    color: yellow;
+}

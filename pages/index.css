@@ -3,12 +3,13 @@
 @import url(../blocks/infoblock/infoblock.css);
 @import url(../blocks/guest-info/guest-info.css);
 @import url(../blocks/signup/signup.css);
+@import url(../blocks/error/error.css);
 /** {
     border: 1px solid red;
 }*/
 .page {
     margin: 0 auto;
-    color: #ffffff;
+    color: red;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     /* Сглаживание для браузеров */
