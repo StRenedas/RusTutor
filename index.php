@@ -1,6 +1,8 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/browser-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="pages/homePage.css">
+    <link rel="stylesheet" href="pages/index.css">
 </head>
 <body class="page">
     <header class="header">
@@ -37,7 +39,7 @@
                 </div>
             </div>
             <div class="signup">
-                <form class="signup__form" name="signup" action="userValidation.php" method="POST">
+                <form class="signup__form" name="signup" action="login.php" method="POST">
                     <div class="signup__title">Sign In</div>
 
                     <input type="text" class="signup__input" name="username" id="username" placeholder="Login:">
@@ -46,7 +48,7 @@
                     <input type="password" class="signup__input" name="password" id="password" placeholder="Password:">
                     <span class="error" id="error-password"></span>
 
-                    <button class="signup__submit" type="submit" id="submit">SUBMIT</button>
+                    <button class="signup__submit" name = 'login-submit' type="submit" id="submit">SUBMIT</button>
                 </form>
             </div>
         </section>

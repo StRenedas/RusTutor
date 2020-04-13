@@ -1,16 +1,12 @@
 @import url(../blocks/header/header.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/cards/cards.css);
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/infoblock/infoblock.css);
-@import url(../blocks/guest-info/guest-info.css);
-@import url(../blocks/signup/signup.css);
-/** {
-    border: 1px solid red;
-}*/
+
 .page {
     margin: 0 auto;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', Arial, sans-serif;
     /* Сглаживание для браузеров */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -19,6 +15,6 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%; 
     /* Рендеринг */
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility; 
     background-color: #0A132D;
 }

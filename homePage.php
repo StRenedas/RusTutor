@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])) {
+        header("Location: index.php?notloggedin");
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +14,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/browser-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="pages/homePage.css">
 </head>
 <body class="page">
     <header class="header">
         <div class="header__content">
-            <img src="images/footer/logo_44.png" alt="logo" class="header__logo">
+            <img src="images/header/logo_44.png" alt="logo" class="header__logo">
             <div class="header__links">
                 <p class="header__link">FAQ</p>
                 <p class="header__link">E-SUSU</p>
                 <p class="profile-button">Profile</p>
-                <p class="header__link">Welcome, username</p>
+                <p class="header__link">Welcome, <?php  echo $_SESSION['username'];  ?></p>
+                <form action="logout.php" method="post">
+                    <button type="submit" name = "logout-submit">LOGOUT</button>
+                </form>
             </div>
         </div>
     </header>
