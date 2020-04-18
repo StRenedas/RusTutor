@@ -11,11 +11,13 @@
     <link rel="shortcut icon" href="images/browser-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="pages/index.css">
+    <!-- Next line should be deleted when is sent to production-->
+    <meta http-equiv="Cache-Control" content="no-cache">
 </head>
 <body class="page">
     <header class="header">
         <div class="header__content">
-            <img src="images/footer/logo_44.png" alt="logo" class="header__logo">
+            <img src="images/header/logo_44.png" alt="logo" class="header__logo">
             <div class="header__links">
                 <a class="header__link">FAQ</a>
                 <a class="header__link">E-SUSU</a>

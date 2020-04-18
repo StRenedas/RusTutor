@@ -3,7 +3,9 @@
 @import url(../blocks/intro/intro.css);
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/footer/footer.css);
-
+/** {
+    border: 1px solid red;
+}*/
 .page {
     margin: 0 auto;
     font-family: 'Open Sans', Arial, sans-serif;

@@ -1,6 +1,5 @@
 @import url(__title/content__title.css);
 @import url(__subtitle/content__subtitle.css);
-@import url(container.css);
 .content {
     max-width: 1184px;
     margin: 0 auto 0;
