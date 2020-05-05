@@ -11,3 +11,17 @@
         font-size: 26px;
     }
 }
+
+
+.cards__type__title {
+    margin: 0 auto 10px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: inherit;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cards__type__title {
+        font-size: 22px;
+    }
+}

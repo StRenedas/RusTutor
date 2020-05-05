@@ -2,5 +2,11 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 20px;
+    padding: 0px auto;
+}
+.header__link {
+    border-right: 1px solid white;
+    padding-right: 7px;
+    margin: 0 0;
 }

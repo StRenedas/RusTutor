@@ -30,3 +30,35 @@
         height: 280px;
     }
 }
+
+
+
+
+.cards__type {
+    width: 240px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+    transition: transform .4s ease-out;
+    text-decoration: none;
+}
+
+.cards__type:hover {
+    transform: translate(0, -10px);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .cards__type {
+        margin-bottom: 20px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cards__type {
+        width: 240px;
+        height: 280px;
+    }
+}

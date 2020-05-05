@@ -5,13 +5,42 @@
 
 .cards {
     color: white;
-    margin: 57px auto 0;
+    margin: 57px auto 104px;
     display: flex;
     justify-content: space-between
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
     .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.cards__type {
+    /*background-image: linear-gradient(rgb(170, 255, 170), white);*/
+    background-color: #0A132D;
+    color: white;
+    border: 2px solid rgb(215, 224, 245);
+}
+
+.cards__type:hover {
+    background-image: linear-gradient(rgb(215, 224, 245), white);
+    transition: transform 0.4s ease-out;
+    color: black;
+}
+
+.typecards {
+    color: white;
+    margin: 126px auto 125px;
+    display: flex;
+    justify-content: space-between
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .typecards {
         flex-direction: column;
         align-items: center;
     }

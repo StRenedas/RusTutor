@@ -39,22 +39,23 @@
     <main class="content">
         <section class="intro">
             <h1 class = "content__title">Pick your level</h1> 
-            <p class = "content__subtitle">Your rating at %Beginner% is 14%</p>
-            <div class="cards">
-                <a href = "beginnerLevel.php" class="cards__item cards__item_level_easy">
-                    <img class="cards__image" src="images/cards/language-white.svg" alt="icon">
-                    <h2 class="cards__title">Beginner</h2>
-                    <p class="cards__subtitle">Russian language basics</p>
-                </a>                   
-                <a href = "#" class="cards__item cards__item_level_med">
-                    <img class="cards__image" src="images/cards/learner-white.svg" alt="icon">
-                    <h2 class="cards__title">Elementary</h2>
-                    <p class="cards__subtitle">Making a step forward</p>
+            <p class = "content__subtitle">Once you'll reach 100% rating at %Beginner%, %Elementary% will unlock immideately.</p>
+            <div class="typecards">
+                <a href = "#" class="cards__type">
+                    <img class="cards__type__image" src="images/cards/language-white.svg" alt="icon">
+                    <h2 class="cards__type__title">Grammar</h2>
                 </a>
-                <a href = "#" class="cards__item cards__item_level_hard">
-                    <img class="cards__image" src="images/cards/brain-white.svg" alt="icon">
-                    <h2 class="cards__title">Pre-Intermediate</h2>
-                    <p class="cards__subtitle">Not a game now!</p>
+                <a href = "#" class="cards__type">
+                    <img class="cards__type__image" src="images/cards/language-white.svg" alt="icon">
+                    <h2 class="cards__type__title">Vocabulary</h2>
+                </a>                           
+                <a href = "#" class="cards__type">
+                    <img class="cards__type__image" src="images/cards/learner-white.svg" alt="icon">
+                    <h2 class="cards__type__title">Test</h2>
+                </a>
+                <a href = "#" class="cards__type">
+                    <img class="cards__type__image" src="images/cards/brain-white.svg" alt="icon">
+                    <h2 class="cards__type__title">Picture Learning</h2>
                 </a>
             </div>
         </section>
