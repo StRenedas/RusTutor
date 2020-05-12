@@ -1,5 +1,9 @@
 <?php
     session_start();
+    if(isset($_SESSION['username'])) {
+        header("Location: homePage.php?notloggedin");
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +45,7 @@
                 </div>
             </div>
             <div class="signup">
-                <form class="signup__form" name="signup" action="login.php" method="POST">
+                <form class="signup__form" name="signup" action="/login-logout/login.php" method="POST">
                     <div class="signup__title">Sign In</div>
 
                     <input type="text" class="signup__input" name="username" id="username" placeholder="Login:" minlength = "6" maxlength = "25">

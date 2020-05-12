@@ -24,10 +24,8 @@
             <div class="header__links">
                 <a class="header__link">FAQ</a>
                 <a class="header__link" href = "http://edu.susu.ru">E-SUSU</a>
-                <!--<a class="header__link"><a href = "http://edu.susu.ru">E-SUSU</a></a>-->
-                <a class="header__link">Profile</a>
                 <p class="header__link">Welcome, <?php  echo $_SESSION['username'];  ?></p>
-                <form action="logout.php" method="post" id = "logout" class = "logout">
+                <form action="login-logout/logout.php" method="post" id = "logout" class = "logout">
                     <button type="submit" class = "logout__button"name = "logout-submit">LOGOUT</button>
                 </form>
             </div>
@@ -39,7 +37,14 @@
     <main class="content">
         <section class="intro">
             <h1 class = "content__title">Pick your level</h1> 
-            <p class = "content__subtitle">Your rating at %Beginner% is 14%</p>
+            <p class = "content__subtitle">Your rating at 
+            <?php 
+            if($_SESSION['rating']<100) echo 'Beginner is ';
+            elseif ($_SESSION['rating']>=100 && $_SESSION['rating']<200) echo 'Elementary is ';
+            else echo 'Pre-intermediate is ';
+            echo $_SESSION['rating']; 
+            ?>
+            </p>
             <div class="cards">
                 <a href = "beginnerLevel.php" class="cards__item cards__item_level_easy">
                     <img class="cards__image" src="images/cards/language-white.svg" alt="icon">

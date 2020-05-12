@@ -4,6 +4,7 @@
         header("Location: index.php?notloggedin");
         exit();
     }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,10 +25,8 @@
             <div class="header__links">
                 <a class="header__link">FAQ</a>
                 <a class="header__link" href = "http://edu.susu.ru">E-SUSU</a>
-                <!--<a class="header__link"><a href = "http://edu.susu.ru">E-SUSU</a></a>-->
-                <a class="header__link">Profile</a>
                 <p class="header__link">Welcome, <?php  echo $_SESSION['username'];  ?></p>
-                <form action="logout.php" method="post" id = "logout" class = "logout">
+                <form action="login-logout/logout.php" method="post" id = "logout" class = "logout">
                     <button type="submit" class = "logout__button"name = "logout-submit">LOGOUT</button>
                 </form>
             </div>
@@ -39,23 +38,29 @@
     <main class="content">
         <section class="intro">
             <h1 class = "content__title">Pick your level</h1> 
-            <p class = "content__subtitle">Once you'll reach 100% rating at %Beginner%, %Elementary% will unlock immideately.</p>
+            <p class = "content__subtitle">Your rating at
+            <?php 
+            if($_SESSION['rating']<100) echo 'Beginner is ';
+            elseif ($_SESSION['rating']>=100 && $_SESSION['rating']<200) echo 'Elementary is ';
+            else echo 'Pre-intermediate is ';
+            echo $_SESSION['rating']; 
+            ?></p>
             <div class="typecards">
-                <a href = "#" class="cards__type">
+                <a href = "wordtranslate.php.?n=1" class="cards__type">
                     <img class="cards__type__image" src="images/cards/language-white.svg" alt="icon">
-                    <h2 class="cards__type__title">Grammar</h2>
+                    <h2 class="cards__type__title">Translation</h2>
                 </a>
-                <a href = "#" class="cards__type">
+                <a href = "pickapicture.php.?n=12" class="cards__type">
                     <img class="cards__type__image" src="images/cards/language-white.svg" alt="icon">
-                    <h2 class="cards__type__title">Vocabulary</h2>
+                    <h2 class="cards__type__title">Pictures</h2>
                 </a>                           
                 <a href = "#" class="cards__type">
                     <img class="cards__type__image" src="images/cards/learner-white.svg" alt="icon">
-                    <h2 class="cards__type__title">Test</h2>
+                    <h2 class="cards__type__title">Word</h2>
                 </a>
                 <a href = "#" class="cards__type">
                     <img class="cards__type__image" src="images/cards/brain-white.svg" alt="icon">
-                    <h2 class="cards__type__title">Picture Learning</h2>
+                    <h2 class="cards__type__title">1 of many</h2>
                 </a>
             </div>
         </section>
