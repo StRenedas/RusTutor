@@ -19,14 +19,13 @@
     <link rel="stylesheet" href="pages/wordtranslate.css">
     <meta http-equiv="Cache-Control" content="no-cache">
 </head>
-<body>
+<body class = "page">
     <header class="header">
         <div class="header__content">
             <img src="images/header/logo_44.png" alt="logo" class="header__logo">
             <div class="header__links">
                 <a class="header__link">FAQ</a>
                 <a class="header__link" href="http://edu.susu.ru">E-SUSU</a>
-                <a class="header__link">Profile</a>
                 <p class="header__link">Welcome, <?php  echo $_SESSION['username'];  ?></p>
                 <form action="login-logout/logout.php" method="post" id="logout" class="logout">
                     <button type="submit" class="logout__button" name="logout-submit">LOGOUT</button>
@@ -39,22 +38,22 @@
     <main class="content">
         <section class="task">
             <p class="task__description">Translate the highlighted word into Russian</p>
-            <p class = "task__text"><?php echo $question['value']?></p>
-            <p><?php echo $answer['value']?></p>
-            <p><?php echo $question['points']?></p>
+            <div class="task__text-wrapper">
+                <p class = "task__text"><?php echo $question['value']?></p>
+            </div>
+            <p class = "task__points">Points for this task: <?php echo $question['points']?></p>
             <form class = "task__form" action="process.php" method="GET">
                 <input class="task__number" type = "hidden" name = 'number' value = '<?php echo $number?>'>
                 <input class="task__answer" type = "text" name = "answer">
                 <button class="task__accepted" type = "submit" name="submit">Next</button>
             </form>
         </section>
-
-
-        <footer class="footer">
-            <p class="footer__copyright">&copy Stanislav Sosedov</p>
-        </footer>
     </main>
 
+
+    <footer class="footer">
+        <p class="footer__copyright">&copy Stanislav Sosedov</p>
+    </footer>
 
 
 </body>

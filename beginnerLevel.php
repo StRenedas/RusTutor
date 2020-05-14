@@ -47,19 +47,19 @@
             ?></p>
             <div class="typecards">
                 <a href = "wordtranslate.php.?n=1" class="cards__type">
-                    <img class="cards__type__image" src="images/cards/language-white.svg" alt="icon">
+                    <img class="cards__type__image" src="images/cards/translation.svg" alt="icon">
                     <h2 class="cards__type__title">Translation</h2>
                 </a>
                 <a href = "pickapicture.php.?n=12" class="cards__type">
-                    <img class="cards__type__image" src="images/cards/language-white.svg" alt="icon">
+                    <img class="cards__type__image" src="images/cards/pickapicture.svg" alt="icon">
                     <h2 class="cards__type__title">Pictures</h2>
                 </a>                           
                 <a href = "#" class="cards__type">
-                    <img class="cards__type__image" src="images/cards/learner-white.svg" alt="icon">
-                    <h2 class="cards__type__title">Word</h2>
+                    <img class="cards__type__image" src="images/cards/buildaword.svg" alt="icon">
+                    <h2 class="cards__type__title">Build a sentence</h2>
                 </a>
-                <a href = "#" class="cards__type">
-                    <img class="cards__type__image" src="images/cards/brain-white.svg" alt="icon">
+                <a href = "onefrommany.php.?n=18" class="cards__type">
+                    <img class="cards__type__image" src="images/cards/1ofmany.svg" alt="icon">
                     <h2 class="cards__type__title">1 of many</h2>
                 </a>
             </div>

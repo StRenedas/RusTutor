@@ -6,7 +6,20 @@
     padding: 0px auto;
 }
 .header__link {
-    border-right: 1px solid white;
-    padding-right: 7px;
+    border-right: 2px solid white;
+    padding-right: 10px;
     margin: 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header__link:visited {
+    color: white;
+}
+.header__link:hover {
+    padding-right: 0;
+    opacity: 0.4;
+    border-right: hidden;
+    border-bottom: 2px solid white;
 }

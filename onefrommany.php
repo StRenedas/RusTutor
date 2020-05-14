@@ -3,7 +3,7 @@
     include 'db-connect.php';
     $number = (int) $_GET['n'];
 
-    $query = "SELECT * FROM `questions` WHERE id = $number and `type` = 2;";
+    $query = "SELECT * FROM `questions` WHERE id = $number and `type` = 4;";
     $result = mysqli_query($connection, $query);
     $question = mysqli_fetch_assoc($result);
 
@@ -45,18 +45,17 @@
 
     <main class="content">
         <section class="task">
-            <p class="task__description">Choose a picture, which describes %smth%:</p>
+            <p class="task__description">Pick a right definition to a word</p>
             <p class = "task__text"><?php echo $question['value']?></p>
             <p><?php echo $question['points']?></p>
-            <form class = "task__form" action="picture_process.php" method="GET">
+            <form class = "task__form" action="oneof_process.php" method="GET">
                 <input class="task__number" type = "hidden" name = 'number' value = '<?php echo $number?>'>
-                <?php while($choices = mysqli_fetch_assoc($choices_result)):?>
-                    <div class="task__choice"></div>
-                        <input type="radio" name="choice" value="<?php echo $choices['value'];?>" id = "choice">
-                        <label for="choice"><img src="<?php echo $choices['value'];?>" width = '50px' height = "50px" alt=""></label>
-                    </div>
-                <?php endwhile; ?>
-                <button class="task__accepted" type = "submit" name="submit-picture">Next</button>
+                <select name="task__select" name = "choice-selected"id="">
+                    <?php while($choices = mysqli_fetch_assoc($choices_result)):?>
+                        <option value="<?php echo $choices['value'];?>" class="task__option" name = "selected"><?php echo $choices['value'];?></option>
+                    <?php endwhile; ?>
+                </select>
+                <button class="task__accepted" type = "submit" name="submit-option">Next</button>
             </form>
         </section>
 
