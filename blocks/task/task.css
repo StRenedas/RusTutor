@@ -16,7 +16,6 @@
     align-items: center;
 }
 .task__text-wrapper {
-    /*border: 1px solid black;*/
     margin-top: 120px;
     border-radius: 10px;
     box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.5);
@@ -70,4 +69,11 @@
 
 .task__allpictures {
     display: flex;
+    margin-top: 59px;
+    margin-bottom: 59px;
+}
+
+.task__select {
+    margin-top: 20px;
+    margin-bottom: 104px;
 }
