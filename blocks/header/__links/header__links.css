@@ -6,8 +6,7 @@
     padding: 0px auto;
 }
 .header__link {
-    border-right: 2px solid white;
-    padding-right: 10px;
+    /*border-right: 2px solid white;*/
     margin: 0 0;
     text-decoration: none;
     cursor: pointer;
@@ -18,8 +17,9 @@
     color: white;
 }
 .header__link:hover {
-    padding-right: 0;
     opacity: 0.4;
-    border-right: hidden;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
+}
+.header__link:last-child {
+    cursor: default;
 }

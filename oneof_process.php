@@ -8,7 +8,7 @@ if (!isset($_SESSION['score'])) {
 if (isset($_GET['submit-option'])) {
     // Get question number and an answer from the submitted form.
     $number = $_GET['number'];
-    $answer_given = $_GET['selected'];
+    $answer_given = $_GET['choice-selected'];
     $next = $number+1;
     // Get total number of questions.
     $total_query = "SELECT * FROM `questions` WHERE `type` = 4 ORDER BY `id` DESC LIMIT 1;";

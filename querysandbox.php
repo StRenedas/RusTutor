@@ -33,7 +33,7 @@
     while ($choices = mysqli_fetch_assoc($choices_result)) {
         echo $choices['value'].'<br/>';
     }
-    
+    echo $_GET['choice-selected'];
 
 ?>
 

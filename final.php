@@ -14,9 +14,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HowToRus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/browser-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="pages/final.css">
+    <meta http-equiv="Cache-Control" content="no-cache">
 </head>
-<body>
-    <p class="">Your new rating after completing the quiz: <?php echo $_SESSION['rating'] ?></p>
+<body class = "page">
+    <header class="header">
+        <div class="header__content">
+            <a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="homelink"><img src="images/header/logo_44.png" alt="logo" class="header__logo"></a>
+            <div class="header__links">
+                <a class="header__link">FAQ</a>
+                <a class="header__link" href = "http://edu.susu.ru">E-SUSU</a>
+                <p class="header__link">Welcome, <?php  echo $_SESSION['username'];  ?></p>
+                <form action="login-logout/logout.php" method="post" id = "logout" class = "logout">
+                    <button type="submit" class = "logout__button"name = "logout-submit">LOGOUT</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <main class="content">
+        <section class="content__final">
+            <p class = "final__rating">Your new rating at 
+            <?php 
+            if($_SESSION['rating']<100) echo 'Beginner ';
+            elseif ($_SESSION['rating']>=100 && $_SESSION['rating']<200) echo 'Elementary ';
+            else echo 'Pre-intermediate ';
+            ?>
+            after completing the quiz is:
+            <?php echo $_SESSION['rating'];  ?>
+            </p>
+            <a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="backtohome">Back to homepage</a>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer__copyright">&copy Stanislav Sosedov</p>
+    </footer>
 </body>
 </html>

@@ -1,5 +1,9 @@
 <?php
     session_start();
+    if(!isset($_SESSION['username'])) {
+        header("Location: index.php?notloggedin");
+        exit();
+    }
     include 'db-connect.php';
     $number = (int) $_GET['n'];
 
@@ -22,7 +26,7 @@
 <body class = "page">
     <header class="header">
         <div class="header__content">
-            <img src="images/header/logo_44.png" alt="logo" class="header__logo">
+            <a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="homelink"><img src="images/header/logo_44.png" alt="logo" class="header__logo"></a>
             <div class="header__links">
                 <a class="header__link">FAQ</a>
                 <a class="header__link" href="http://edu.susu.ru">E-SUSU</a>
