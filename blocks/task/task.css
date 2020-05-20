@@ -1,3 +1,14 @@
+@import url(./__content/task__content.css);
+@import url(./__description/task__description.css);
+@import url(./__form/task__form.css);
+@import url(./__accepted/task__accepted.css);
+@import url(./__answer/task__answer.css);
+@import url(./__picture/task__picture.css);
+@import url(./__pictures/task__pictures.css);
+@import url(./__points/task__points.css);
+@import url(./__select/task__select.css);
+@import url(./__text/task__text.css);
+
 .task {
     max-width: 100%;
     margin: 0 auto 0;
@@ -6,83 +17,4 @@
     justify-content: space-between;
     align-items: center;
     background-color: #D7E0F5;
-}
-
-.task__content {
-    max-width: 1184px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.task__description {
-    font-size: 40px;
-}
-.task__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.task__text-wrapper {
-    /*margin-top: 120px;*/
-    border-radius: 10px;
-    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.5);
-    background-color: white;
-    width: auto;
-    text-align: center;
-    padding: 0 30px 0;
-}
-.task__text {
-    font-size: 30px;
-}
-.task__answer {
-    border: none;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.5);
-    background-color: white;
-    text-align: center;
-    font-size: 25px;
-}
-.task__accepted {
-    /*margin-top: 40px;
-    margin-bottom: 175px;*/
-    border: 2px solid rgb(170, 255, 170);
-    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    font-size: 25px;
-    background-color:white;
-    padding: 5px 30px;
-    cursor: pointer;
-}
-.task__accepted:hover {
-    background-color: rgb(170, 255, 170);
-    cursor: pointer;
-}
-
-.task__pictures {
-    display: flex;
-    /*margin-top: 59px;
-    margin-bottom: 59px;*/
-}
-
-.task__picture {
-    display: flex;
-    align-items: center;
-   /* margin-left: 40px;*/
-}
-
-.task__picture_image {
-    width: 150px;
-    height: 150px;
-    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.5);
-    border: 2px solid black;
-    border-radius: 3%;
-}
-
-
-
-.task__select {
-    /*margin-top: 20px;
-    margin-bottom: 104px;*/
 }

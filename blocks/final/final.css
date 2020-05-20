@@ -1,0 +1,14 @@
+@import url(./__content/final__content.css);
+@import url(./__button/final__button.css);
+@import url(./__back/final__back.css);
+@import url(./__rating/final__rating.css);
+
+.final {
+    max-width: 100%;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D7E0F5;
+}

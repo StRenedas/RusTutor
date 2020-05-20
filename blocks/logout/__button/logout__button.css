@@ -3,4 +3,9 @@
     background-color: inherit;
     border: 1px solid white;
     color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+.logout__button:hover {
+    color: black;
+    background-color: white;
 }

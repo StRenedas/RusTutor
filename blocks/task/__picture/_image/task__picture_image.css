@@ -1,0 +1,7 @@
+.task__picture_image {
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    border-radius: 3%;
+}

@@ -1,0 +1,10 @@
+.task__answer {
+    border: none;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 50px;
+}

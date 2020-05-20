@@ -36,18 +36,21 @@
         </div>
     </header>
     
-    <main class="content">
-        <section class="content__final">
-            <p class = "final__rating">Your new rating at 
-            <?php 
-            if($_SESSION['rating']<100) echo 'Beginner ';
-            elseif ($_SESSION['rating']>=100 && $_SESSION['rating']<200) echo 'Elementary ';
-            else echo 'Pre-intermediate ';
-            ?>
-            after completing the quiz is:
-            <?php echo $_SESSION['rating'];  ?>
-            </p>
-            <a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="backtohome">Back to homepage</a>
+    <main class="main">
+        <section class="final">
+            <div class="final__content">
+                <p class = "final__rating">
+                Your new rating at 
+                <?php 
+                if($_SESSION['rating']<100) echo 'Beginner ';
+                elseif ($_SESSION['rating']>=100 && $_SESSION['rating']<200) echo 'Elementary ';
+                else echo 'Pre-intermediate ';
+                ?>
+                after completing the quiz is:
+                <?php echo $_SESSION['rating'];  ?>
+                </p>
+                <button class = "final__button"><a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="final__back">Back to homepage</a></button>
+            </div>
         </section>
     </main>
 

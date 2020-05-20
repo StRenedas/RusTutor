@@ -1,0 +1,6 @@
+@import url(./_image/task__picture_image.css);
+.task__picture {
+    display: flex;
+    align-items: center;
+   /* margin-left: 40px;*/
+}

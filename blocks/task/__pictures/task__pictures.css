@@ -1,0 +1,7 @@
+.task__pictures {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /*margin-top: 59px;
+    margin-bottom: 59px;*/
+}
