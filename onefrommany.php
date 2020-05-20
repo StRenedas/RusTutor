@@ -49,13 +49,15 @@
     <main class="content">
         <section class="task">
             <p class="task__description">Pick a right definition to a word</p>
-            <p class = "task__text"><?php echo $question['value']?></p>
+            <div class="task__text-wrapper">
+                <p class = "task__text"><?php echo $question['value']?></p>
+            </div>
             <p class = "task__points">Points for this task: <?php echo $question['points']?></p>
             <form class = "task__form" action="oneof_process.php" method="GET">
                 <input class="task__number" type = "hidden" name = 'number' value = '<?php echo $number?>'>
                 <select class="task__select" name = "choice-selected">
                     <?php while($choices = mysqli_fetch_assoc($choices_result)):?>
-                        <option value="<?php echo $choices['value'];?>" class="task__option" name = "option-selected"><?php echo $choices['value'];?></option>
+                        <option class="task__option" value="<?php echo $choices['value'];?>" name = "option-selected"><?php echo $choices['value'];?></option>
                     <?php endwhile; ?>
                 </select>
                 <button class="task__accepted" type = "submit" name="submit-option">Next</button>

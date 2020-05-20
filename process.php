@@ -5,7 +5,7 @@ if (!isset($_SESSION['score'])) {
     $_SESSION['score'] = 0;
 }
 
-if (isset($_GET['submit'])) {
+if (isset($_GET['submit-word'])) {
     // Get question number and an answer from the submitted form.
     $number = $_GET['number'];
     $answer_given = $_GET['answer'];

@@ -46,26 +46,28 @@
     </header>
 
 
-    <main class="content">
+    <main class="main">
         <section class="task">
-            <p class = "task__text"><?php echo $question['value']?></p>
-            <p class = "task__points">Points for this task: <?php echo $question['points']?></p>
-            <form class = "task__form" action="picture_process.php" method="GET">
-                <input class="task__number" type = "hidden" name = 'number' value = '<?php echo $number?>'>
-                <div class="task__allpictures">
-                <?php while($choices = mysqli_fetch_assoc($choices_result)):?>
-                    <div class="task__choice">
-                        <input type="radio" name="choice" value="<?php echo $choices['value'];?>" id = "choice">
-                        <label class = "radio-label" for="choice"><img class = "radio-image" src="<?php echo $choices['value'];?>" alt=""></label>
-                    </div>
-                <?php endwhile; ?>
+            <div class="task__content">
+                <p class="task__description">Pick one picture that describes a word</p>
+                <div class="task__text-wrapper">
+                    <p class = "task__text"><?php echo $question['value']?></p>
                 </div>
-                <button class="task__accepted" type = "submit" name="submit-picture">Next</button>
-            </form>
+                <p class = "task__points">Points for this task: <?php echo $question['points']?></p>
+                <form class = "task__form" action="picture_process.php" method="GET">
+                    <input class="task__number" type = "hidden" name = 'number' value = '<?php echo $number?>'>
+                    <div class="task__pictures">
+                    <?php while($choices = mysqli_fetch_assoc($choices_result)):?>
+                        <div class="task__picture">
+                            <input class = "task__picture_button" type="radio" name="choice" value="<?php echo $choices['value'];?>" id = "choice">
+                            <label class = "task__picture_label" for="choice"><img class = "task__picture_image" src="<?php echo $choices['value'];?>" alt=""></label>
+                        </div>
+                    <?php endwhile; ?>
+                    </div>
+                    <button class="task__accepted" type = "submit" name="submit-picture">Next</button>
+                </form>
+            </div>
         </section>
-
-
-        
     </main>
 
 

@@ -39,18 +39,20 @@
     </header>
 
 
-    <main class="content">
+    <main class="main">
         <section class="task">
-            <p class="task__description">Translate the highlighted word into Russian</p>
-            <div class="task__text-wrapper">
-                <p class = "task__text"><?php echo $question['value']?></p>
+            <div class="task__content"></div>
+                <p class="task__description">Translate the highlighted word into Russian</p>
+                <div class="task__text-wrapper">
+                    <p class = "task__text"><?php echo $question['value']?></p>
+                </div>
+                <p class = "task__points">Points for this task: <?php echo $question['points']?></p>
+                <form class = "task__form" action="process.php" method="GET">
+                    <input class="task__number" type = "hidden" name = 'number' value = '<?php echo $number?>'>
+                    <input class="task__answer" type = "text" name = "answer">
+                    <button class="task__accepted" type = "submit" name="submit-word">Next</button>
+                </form>
             </div>
-            <p class = "task__points">Points for this task: <?php echo $question['points']?></p>
-            <form class = "task__form" action="process.php" method="GET">
-                <input class="task__number" type = "hidden" name = 'number' value = '<?php echo $number?>'>
-                <input class="task__answer" type = "text" name = "answer">
-                <button class="task__accepted" type = "submit" name="submit">Next</button>
-            </form>
         </section>
     </main>
 
