@@ -2,18 +2,6 @@ const inputs = document.querySelectorAll('.signup__input');
 const loginSubmit = document.getElementById('submit');
 const form = document.querySelector('.signup__form');
 
-const links = document.querySelector('.header__links_mobile');
-const mobileButton = document.querySelector('.header__button_mobile');
-
-mobileButton.addEventListener('click', () => {
-    toggleMenu();
-})
-
-
-function toggleMenu () {
-    links.classList.toggle('header__links_mobile-active');
-}
-
 function checkValid (element, isValid) {
     const errorElement = document.querySelector(`#error-${element.id}`);
     if (element.value === '') {

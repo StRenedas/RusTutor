@@ -44,11 +44,22 @@
     text-decoration: none;
     cursor: pointer;
     transition: border-bottom 0.3s opacity 0.4s;
+    padding-bottom: 10px;
+}
+.header__link_mobile:visited {
+    color: white;
+}
+.header__link_mobile:hover {
+    opacity: 0.4;
+    border-bottom: 1px solid white;
+}
+.header__link_mobile:last-child {
+    cursor: default;
 }
 
 .header__link_mobile:visited {
     color: white;
-}s
+}
 .header__link_mobile:hover {
     opacity: 0.4;
     border-bottom: 1px solid white;
