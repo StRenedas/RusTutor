@@ -19,16 +19,28 @@
     <meta http-equiv="Cache-Control" content="no-cache">
 </head>
 <body class="page">
+
+
+
     <header class="header">
+            <div class="header__links_mobile">
+                <a class="header__link_mobile">FAQ</a>
+                <a class="header__link_mobile" href = "http://edu.susu.ru">E-SUSU</a>
+                <a class="header__link_mobile">You're not logged in</a>
+            </div>
         <div class="header__content">
             <a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="homelink"><img src="images/header/logo_44.png" alt="logo" class="header__logo"></a>
             <div class="header__links">
                 <a class="header__link">FAQ</a>
-                <a class="header__link">E-SUSU</a>
+                <a class="header__link" href = "http://edu.susu.ru">E-SUSU</a>
                 <a class="header__link">You're not logged in</a>
             </div>
+            <button class="header__button_mobile">hello</button>
         </div>
     </header>
+
+
+
     <main class="content">
         <section class="guest-info">
             <div class="infoblock">

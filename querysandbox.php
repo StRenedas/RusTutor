@@ -22,10 +22,22 @@
     $total_results = mysqli_query($connection, $total_query);
     $total = mysqli_fetch_assoc($total_results);
     $total = $total['id'];*/
+    function getQuestionByType(int $type, $connect) {
+        $q_query = "SELECT * FROM `questions` WHERE `type` = $type;";
+        $q_results = mysqli_query($connect, $q_query);
+        $q = mysqli_fetch_assoc($q_results);
+        return $q;
+    }
 
-    $q_query = "SELECT * FROM `questions` WHERE `type` = 4;";
-    $q_results = mysqli_query($connection, $q_query);
-    while ($q = mysqli_fetch_assoc($q_results)) {
+    $y = getQuestionByType(4, $connection);
+    foreach ($y as $value) {
+        echo $value;
+    }
+    /*$q_query = "SELECT * FROM `questions` WHERE `type` = 4;";
+    $q_results = mysqli_query($connection, $q_query);*/
+
+
+    /*while ($q = mysqli_fetch_assoc(getQuestionByType(4, $connection))) {
         echo $q['value'].'<br/>';
     }
     $choices_query = "SELECT * FROM `options` WHERE question_id = 18 UNION ALL SELECT * FROM `answer` WHERE question_id = 18 ORDER BY RAND();";
@@ -33,7 +45,7 @@
     while ($choices = mysqli_fetch_assoc($choices_result)) {
         echo $choices['value'].'<br/>';
     }
-    echo $_GET['choice-selected'];
+    echo $_GET['choice-selected'];*/
 
 ?>
 

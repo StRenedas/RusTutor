@@ -5,6 +5,7 @@
     font-size: 20px;
     padding: 0px auto;
 }
+
 .header__link {
     /*border-right: 2px solid white;*/
     margin: 0 0;
@@ -23,4 +24,49 @@
 }
 .header__link:last-child {
     cursor: default;
+}
+
+
+
+.header__links_mobile {
+    width: 100%;
+    display: none;
+    font-size: 20px;
+}
+
+.header__links_mobile-active {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__link_mobile {
+    margin: 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-bottom 0.3s opacity 0.4s;
+}
+
+.header__link_mobile:visited {
+    color: white;
+}s
+.header__link_mobile:hover {
+    opacity: 0.4;
+    border-bottom: 1px solid white;
+}
+.header__link_mobile:last-child {
+    cursor: default;
+}
+
+
+
+.header__button_mobile {
+    display: none;
+}
+@media (max-width: 800px) {
+    .header__links {
+        display: none;
+    }
+    .header__button_mobile {
+        display: block;
+    }
 }

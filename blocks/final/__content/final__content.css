@@ -1,9 +1,11 @@
 .final__content {
     max-width: 1184px;
+    height: 674px;
+    padding: 0 50px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }

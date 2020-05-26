@@ -37,7 +37,7 @@
 
     <main class="content">
         <section class="intro">
-            <h1 class = "content__title">Pick your level</h1> 
+            <h1 class = "content__title">Pick a task type</h1> 
             <p class = "content__subtitle">Your rating at
             <?php 
             if($_SESSION['rating']<100) echo 'Beginner is ';
@@ -54,10 +54,6 @@
                     <img class="cards__type__image" src="images/cards/pickapicture.svg" alt="icon">
                     <h2 class="cards__type__title">Pictures</h2>
                 </a>                           
-                <a href = "#" class="cards__type">
-                    <img class="cards__type__image" src="images/cards/buildaword.svg" alt="icon">
-                    <h2 class="cards__type__title">Build a sentence</h2>
-                </a>
                 <a href = "onefrommany.php.?n=18" class="cards__type">
                     <img class="cards__type__image" src="images/cards/1ofmany.svg" alt="icon">
                     <h2 class="cards__type__title">1 of many</h2>

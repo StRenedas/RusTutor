@@ -4,7 +4,7 @@
 @import url(./__title/infoblock__title.css);
 
 .infoblock {
-    padding: 112px 0 113px;
+    padding: 126px 0 127px;
     background-color: #ECEFF6;
     width: 50%;
     display: flex;
@@ -13,5 +13,11 @@
     align-items: center;
     font-size: 20px;
     color: #25618C;
+}
+
+@media (max-width: 800px) {
+    .infoblock {
+        width: 100%;
+    }
 }
 

@@ -19,7 +19,6 @@ if (isset($_POST['login-submit'])) {
             mysqli_stmt_execute($statement);
             $result = mysqli_stmt_get_result($statement);
             if ($row = mysqli_fetch_assoc($result)) {
-                #$passcheck = password_verify($password, $row['password']);
                 if ($password != $row['password']) {
                     header("Location: ../index.php?error=wrongpass");
                     exit();
