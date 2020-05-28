@@ -19,42 +19,38 @@
     <meta http-equiv="Cache-Control" content="no-cache">
 </head>
 <body class="page">
-
-
-
     <header class="header">
         <div class="header__links_mobile">
-            <a class="header__link_mobile">FAQ</a>
+            <a class="header__link_mobile" href = "FAQ.php">FAQ</a>
             <a class="header__link_mobile" href = "http://edu.susu.ru">E-SUSU</a>
             <a class="header__link_mobile">You're not logged in</a>
         </div>
         <div class="header__content">
-            <a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="homelink"><img src="images/header/logo_44.png" alt="logo" class="header__logo"></a>
+            <a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="homelink"><div class="header__logo"></div></a>
             <div class="header__links">
-                <a class="header__link">FAQ</a>
+                <a class="header__link" href = "FAQ.php">FAQ</a>
                 <a class="header__link" href = "http://edu.susu.ru">E-SUSU</a>
                 <a class="header__link">You're not logged in</a>
             </div>
-            <button class="header__button_mobile">hello</button>
+            <span class="header__button_mobile"></span>
         </div>
     </header>
-
-
-
     <main class="content">
-        <section class="guest-info">
-            <div class="infoblock">
-                <h1 class = "infoblock__title">Quick Guide</h1>
-                <p class="infoblock__subtitle">That's a service to practice your skills at russian<br> language and get some good grades at SUSU.</p>
-                <div class="infoblock__container">
-                    <ul class="infoblock__instructions">
-                        <li>Get your login from your teacher.</li>
-                        <li>Starting with ‘Begginer’ course, select the task type.</li>
-                        <li>Complete a block of tasks to increase your overall rating.</li>
-                        <li>Show your results to your teacher.</li>
-                        <li>Get some good grades!</li>
-                    </ul>
-                </div>
+        <section class="introduction">
+            <div class="signin">
+                <form class="signin__form" name="signin" action="/login-logout/register.php" method="POST">
+                    <div class="signin__title">Sign Up</div>
+
+                    <input type="text" class="signin__input" name="reg-username" id="username" placeholder="Login:" minlength = "6" maxlength = "25">
+
+                    <input type="email" class="signin__input" name="reg-email" id="email" placeholder="Email:" required>
+
+                    <input type="password" class="signin__input" name="reg-password" id="password" placeholder="Password:" minlength = "6" maxlength = "25">
+
+                    <input type="password" class="signin__input" name="reg-password-repeat" id="password-repeat" placeholder="Repeat password:" minlength = "6" maxlength = "25">
+
+                    <button class="signin__submit" name = 'signin-submit' type="submit" id="register-submit" >SIGN UP</button>
+                </form>
             </div>
             <div class="signup">
                 <form class="signup__form" name="signup" action="/login-logout/login.php" method="POST">

@@ -71,9 +71,23 @@
 
 
 .header__button_mobile {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
     display: none;
 }
-@media (max-width: 800px) {
+
+.header__button_mobile:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    border-top: 5px solid #fff;
+}
+@media (max-width: 900px) {
     .header__links {
         display: none;
     }

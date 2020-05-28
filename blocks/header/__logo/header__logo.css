@@ -1,4 +1,14 @@
 .header__logo {
     width: 400px;
     height: 50px;
+    background-image: url(/images/header/logo_44.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media (max-width: 600px) {
+    .header__logo {
+        width: 75px;
+        height: 75px;
+        background-image: url(/images/header/logo_48.png);
+    }
 }

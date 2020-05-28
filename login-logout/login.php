@@ -19,11 +19,12 @@ if (isset($_POST['login-submit'])) {
             mysqli_stmt_execute($statement);
             $result = mysqli_stmt_get_result($statement);
             if ($row = mysqli_fetch_assoc($result)) {
-                if ($password != $row['password']) {
+                $passwordCheck = password_verify($password, $row['password']);
+                if ($passwordCheck == false) {
                     header("Location: ../index.php?error=wrongpass");
                     exit();
                 }
-                else if ($password == $row['password']) {
+                else if ($passwordCheck == true) {
                     session_start();
                     $_SESSION['userid'] = $row['user_id'];
                     $_SESSION['username'] = $row['username'];

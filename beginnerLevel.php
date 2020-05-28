@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/browser-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="pages/homePage.css">
+    <link rel="stylesheet" href="pages/beginnerLevel.css">
     <meta http-equiv="Cache-Control" content="no-cache">
 </head>
 <body class="page">
@@ -26,7 +26,7 @@
             <p class="header__link_mobile">Welcome, <?php  echo $_SESSION['username'];  ?></p>
         </div>
         <div class="header__content">
-            <a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="homelink"><img src="images/header/logo_44.png" alt="logo" class="header__logo"></a>
+            <a href="<?php if (!isset($_SESSION['username'])) echo "index.php"; else echo "homePage.php";?>" class="homelink"><div class="header__logo"></div></a>
             <div class="header__links">
                 <a class="header__link">FAQ</a>
                 <a class="header__link" href = "http://edu.susu.ru">E-SUSU</a>
@@ -35,7 +35,7 @@
                     <button type="submit" class = "logout__button"name = "logout-submit">LOGOUT</button>
                 </form>
             </div>
-            <button class="header__button_mobile">hello</button>
+            <span class="header__button_mobile"></span>
         </div>
     </header>
 

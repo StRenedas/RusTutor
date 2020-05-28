@@ -11,3 +11,9 @@
 .task__text {
     font-size: 30px;
 }
+
+@media (max-width: 800px) {
+    .task__text-wrapper {
+        padding: 0;
+    }
+}

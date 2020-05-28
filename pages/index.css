@@ -1,9 +1,9 @@
 @import url(../blocks/header/header.css);
-@import url(../blocks/footer/footer.css);
-@import url(../blocks/infoblock/infoblock.css);
-@import url(../blocks/guest-info/guest-info.css);
+@import url(../blocks/introduction/introduction.css);
+@import url(../blocks/signin/signin.css);
 @import url(../blocks/signup/signup.css);
 @import url(../blocks/error/error.css);
+@import url(../blocks/footer/footer.css);
 /** {
     border: 1px solid red;
 }*/
