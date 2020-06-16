@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(isset($_SESSION['username'])) {
-        header("Location: homePage.php?notloggedin");
+        header("Location: homePage.php?loggedin");
         exit();
     }
 ?>
